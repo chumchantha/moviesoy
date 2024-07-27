@@ -2,7 +2,7 @@ import Banner from "@/components/Banner";
 
 const MoviesPage = () => {
   return (
-    <main>
+    <main className="mt-20 content-center">
       <Banner />
     </main>
   );
