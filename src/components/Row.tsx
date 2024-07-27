@@ -17,7 +17,7 @@ const Lists = async () => {
             className="
             rounded-[6px]
             shadow-md
-            min-w-[240px]   md:min-w-[280px]
+            min-w-[200px]   md:min-w-[280px]
             bg-black
             overflow-hidden
             text-center
@@ -29,7 +29,7 @@ const Lists = async () => {
               alt="backdrop"
               className="
               w-full
-              h-[140px] md:h-[160px]
+              h-[110px] md:h-[160px]
               object-cover
             "
             />
