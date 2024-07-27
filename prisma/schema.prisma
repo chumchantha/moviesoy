@@ -15,5 +15,6 @@ model Movie {
   poster String
   image String
   trailer String
+  isFeatured Boolean @default(false)
   createdAt DateTime @default(now())
 }

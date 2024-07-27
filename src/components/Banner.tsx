@@ -3,8 +3,9 @@ import { Info, Play } from "lucide-react";
 import PlayButton from "./PlayButton";
 
 const Hero = async () => {
-  const data = await prisma.movie.findUnique({
-    where: { id: "669e501b80658e5d10580e7b" },
+  const data = await prisma.movie.findFirst({
+    where: { isFeatured: true },
+    orderBy: { id: "asc" },
   });
 
   return (
