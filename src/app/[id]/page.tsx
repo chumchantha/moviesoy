@@ -13,9 +13,6 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
   if (!movie) {
     notFound();
   }
-  const movies = await prisma.movie.findMany();
-
-  const movies = movies;
 
   return (
     <main className="h-screen w-full space-y-4 flex flex-col lg:flex-row">
@@ -37,7 +34,7 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
           <div className="grid grid-cols-4 gap-4 items-center">
             {Array.from({ length: 16 }, (_, index) => index + 1).map(
               (number) => (
-                <Link href={`/${movies.id}`} key={movie.id}>
+                <Link href={`/${movie.id}/episode/${number}`} key={movie.id}>
                   <p className="p-4 min-w-[40px] text-white bg-gray-800 text-center font-semibold rounded-[8px] shadow-md hover:bg-black">
                     {number}
                   </p>
