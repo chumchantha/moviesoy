@@ -3,10 +3,11 @@ import Banner from "@/components/Banner";
 import Row from "@/components/Row";
 import Column from "@/components/Column";
 import Modal from "@/components/Modal";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative overflow-x-hidden">
       <Banner />
 
       <section className="ml-4 ">
@@ -17,8 +18,6 @@ export default function Home() {
         <Row />
         <Column label="KDrama" />
       </section>
-
-      <Footer />
     </main>
   );
 }

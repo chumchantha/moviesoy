@@ -32,7 +32,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-30 z-10 shadow-md px-4">
+    <header className="sticky top-0 left-0 right-0 bg-black bg-opacity-30 z-10 shadow-md px-4">
       <nav className="flex justify-between items-center h-16 ">
         {/* Left */}
         <div className="flex gap-2 items-center">
